@@ -3,6 +3,8 @@
 This project uses a Convolutional Neural Network (CNN) to classify dog breeds based on input images. The model is trained in a Jupyter Notebook and deployed using a **Flask-based web UI** developed in PyCharm.
 
 🚀 Project Workflow
+
+
 🔬 Model Training (Jupyter Notebook)
 •	Image dataset is preprocessed (resized, normalized, labeled).
 •	A CNN model is built and trained using Keras with TensorFlow backend.
@@ -14,6 +16,7 @@ This project uses a Convolutional Neural Network (CNN) to classify dog breeds ba
 •	The predicted dog breed is shown in the browser.
 
 🧠 Technologies Used
+
 📦 Libraries
 •	`TensorFlow` / `Keras` – CNN model building & training
 •	`NumPy`, `Pandas` – Data handling
