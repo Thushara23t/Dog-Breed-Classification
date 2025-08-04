@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Breeds</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Dog Breed Information</h1>
+    </header>
+    <nav>
+        <a href="/" class="btn">Home</a>
+        <a href="/breed" class="btn">Breed Information</a>
+        <a href="/predict" class="btn">Predict Breed</a>
+    </nav>
+    <main>
+        <section class="breed">
+            <h2>Chihuahua</h2>
+            <p>Chihuahuas are small, lively, and alert dogs known for their loyalty and big personalities.</p>
+        </section>
+        <section class="breed">
+            <h2>Japanese Spaniel</h2>
+            <p>Japanese Spaniels are elegant and affectionate dogs that love attention and make great companions.</p>
+        </section>
+        <section class="breed">
+            <h2>Maltese Dog</h2>
+            <p>Maltese dogs are gentle and playful, recognized for their beautiful white coats and friendly nature.</p>
+        </section>
+        <section class="breed">
+            <h2>Pekinese</h2>
+            <p>Pekinese are dignified and independent dogs with a royal history and a distinctive lion-like mane.</p>
+        </section>
+        <!-- Add more sections for other breeds -->
+    </main>
+</body>
+</html>

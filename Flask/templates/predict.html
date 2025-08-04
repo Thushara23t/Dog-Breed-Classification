@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Dog Breed</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>🐾 Predict Dog Breed 🐾</h1>
+        <p>Upload a photo and let our classifier identify the breed!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="/" class="btn">Home</a>
+        <a href="/breed" class="btn">Breed Information</a>
+        <a href="/predict" class="btn">Predict Breed</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <h2>Upload Image</h2>
+        <p>Choose an image of a dog, and our classifier will predict its breed.</p>
+
+        <!-- Form for Image Upload -->
+        <form action="/predict" method="POST" enctype="multipart/form-data">
+            <label for="image" class="form-label">Upload an image:</label>
+            <input type="file" name="image" id="image" accept="image/*" class="form-input">
+            <button type="submit" class="btn btn-primary">Classify</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Crafted with care for dog lovers worldwide.</p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Dog Breed Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>🐾 Welcome to the Dog Breed Classifier 🐾</h1>
+        <p>"Unleash the Power of AI to Identify Your Favorite Dog Breeds!"</p>
+    </header>
+
+    <nav>
+        <a href="/" class="btn">Home</a>
+        <a href="/breed" class="btn">Breed Information</a>
+        <a href="/predict" class="btn">Predict Breed</a>
+    </nav>
+
+    <div class="container">
+        <h2>Why Use Our Classifier?</h2>
+        <p>
+            Our Dog Breed Classifier uses state-of-the-art machine learning to accurately identify
+            various dog breeds from images.
+        </p>
+        <img src="{{ url_for('static', filename='dog_banner.jpg') }}" alt="Dog Banner">
+    </div>
+
+    <section class="cta">
+        <h2>Start Exploring Today!</h2>
+        <p>Click on "Predict Breed" to upload an image and identify the dog breed.</p>
+        <a href="/predict" class="btn btn-primary">Get Started</a>
+    </section>
+
+    <footer>
+        <p>"Designed for those who cherish dogs, worldwide"</p>
+    </footer>
+</body>
+</html>
